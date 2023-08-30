@@ -1,0 +1,40 @@
+.skill-row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-col{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid  rgb(117, 4, 4); */
+    border-radius: 25px;
+    padding: 2rem;
+    box-shadow: 3px 3px 2px  rgb(117, 4, 4);
+
+}
+.skill-icon{
+    padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .education, .skill {
+        padding-top: 0;
+    }
+    .skill-row {
+    flex-direction: column;
+    gap: 2rem;
+    }
+    .skill-row .skill-col {
+        width: 80%;
+    }
+    .education-row {
+        margin-left: auto;
+    flex-direction: column;
+    }
+    .education-column {
+        width: 90%;
+    }
+    
+}

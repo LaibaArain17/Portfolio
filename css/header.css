@@ -1,0 +1,76 @@
+
+.header{
+    width: 100%;
+    height: auto;
+    padding: 2rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: transparent;
+}
+.logo span { background-color: transparent;}
+
+.toggle {display: none;}
+#checkbox {display: none;}
+
+.navbar{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.navbar a:hover,
+.navbar a.active,
+span
+{
+    color:rgb(117, 4, 4);
+}
+.navbar a{
+    margin-left: 1rem;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+.navbar i {
+    background-color: transparent;
+}
+
+
+
+/*   =============== HOME CSS =============== */
+
+.home .home-details { font-size: 150%; }
+
+
+@media (max-width:864px) {
+    .nav_education { display: none;}
+}
+
+@media (max-width:768px) {
+    .navbar { display: none;}
+    .toggle { display: block;}
+    .toggle-btn { font-size: 25px; cursor: pointer;}
+    .home .home-details { font-size: 100%; }
+
+    .navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 30px;
+    height: 100vh;
+    font-size: 1.5rem;
+    left: 0;
+    transform: translateX(-100%);
+    gap: 1rem;
+    top: 4rem;
+    background-color: rgb(17, 16, 16);
+    }
+
+    .show_navbar { transform: translate(0%) !important;}
+}
